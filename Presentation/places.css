@@ -1,0 +1,158 @@
+/*
+Name: Hannah Lin
+Course: Web Design 1, Section 2
+*/
+
+
+form {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+form > p{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#inputs {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+
+
+
+/*
+
+.answer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: gray;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.answer:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.answer > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    background: white;
+    opacity: 0.5;
+}
+
+.close {
+    background: gray;
+    color: red;
+    line-height: 25px;
+    position: relative;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.close:hover {background: white;}*/
+
+/******popup******/
+.answerBG{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    z-index: 100;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    /*filter: alpha(opacity=50);*/
+}
+
+.answerContent {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    background-color: white;
+    z-index: 102;
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    overflow: auto;
+    border-radius: 15px;
+
+}
+
+#close {
+    float: right;
+
+}
+
+
+
+input[type=radio] {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    position: relative;
+    left: -5px;
+    bottom: 0px;
+    vertical-align: middle;
+    margin-top: 50px;
+    float: left;
+}
+
+.placeCont {
+    width: 250px;
+    text-align: justify;
+    margin: 15px;
+}
+
+
+.placePic {
+    width: 75%;
+    height: auto;
+    display: block;
+    border: solid rgba(117, 124, 211, 0.5) 2px;
+    border-radius: 3px;
+}
+
+.placePic:hover{
+    cursor: pointer;
+}
+
+.placePic:active{
+    border-color: rgba(117, 124, 211, .8);
+}
+
+.col {
+    width: 250px;
+    float: left;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+
+#bottom {
+    clear: both;
+}

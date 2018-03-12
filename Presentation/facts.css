@@ -1,0 +1,135 @@
+/*
+Name: Hannah Lin
+Course: Web Design 1, Section 2
+*/
+
+
+form {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+form > p{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#inputs {
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+#guess-table {
+    padding: 0;
+    margin-bottom: 70px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    border: solid rgba(117, 124, 211, 0.5) 2px !important;
+    background: rgba(115, 25, 158, 0.5);
+}
+
+td {
+    width: 200px;
+    height: 80px;
+    margin: 0;
+}
+
+th {
+    height: 50px;
+    text-align: center;
+    margin: 0;
+    background: rgba(110, 43, 253, 0.65);
+    color: rgba(221, 207, 252, 100);
+    font-weight: bold;
+    border-bottom: solid 2px #373EA0 !important;
+}
+
+#hM {
+    border-color: #373EA0 !important;
+    border-right: solid 2px;
+    border-left: solid 2px;
+}
+
+.m {
+    border-right: solid rgba(67, 25, 158, 0.5) 2px !important;
+    border-left: solid rgba(67, 25, 158, 0.5) 2px !important;
+
+}
+
+#rM {
+    border-top: dashed rgba(67, 25, 158, 0.4) 2px !important;
+    border-bottom: dashed rgba(67, 25, 158, 0.4) 2px !important;
+}
+
+#guess-table input[type=button] {
+    font-size: 50%;
+    background: rgba(210, 176, 253, 0.75);
+    height: 100%;
+    width: 100%;
+    white-space: normal;
+    margin: 0;
+    border-radius: 8px !important;
+    border: none;
+}
+
+#guess-table input[type=button]:hover{
+    background: rgba(143, 95, 245, 0.2);
+}
+
+#guess-table input[type=button]:active{
+    border: rgba(67, 25, 158, 0.4) solid 2px !important;
+}
+
+/******answer******/
+#answerContainer {
+    width: 662px;
+    background-color: #cdddff;
+    padding: 10px;
+    margin: 0px;
+    border: 2px solid #757CD3;
+    position: relative;
+    left: 700px;
+    overflow: auto;
+    border-radius: 5px 0px 0px 5px;
+    height: 99px;
+}
+
+#alignP > p{
+    vertical-align: middle;
+    margin-top: -6px;
+
+}
+
+#alignP {
+    width: 520px;
+    float: left;
+    height: 70px;
+
+}
+
+input.tableit {
+    font-size: 12px !important;
+}
+
+#answerOpt{
+    float: right;
+    width: 80px;
+}
+
+#closeAnswer {
+    /*position: relative;
+    top: -35px;
+    left: -18px;
+    margin: 0px;
+    padding: 0px 5px;*/
+    
+}
+
+#answerOpt > input {
+   width: 60px;
+   margin: 5px;
+
+}
+

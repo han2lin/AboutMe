@@ -1,0 +1,364 @@
+/*
+Name: Hannah Lin
+Course: Web Design 1, Section 2
+*/
+
+/* ****'background' template***** */
+html {
+    background-image: url("../Images/backwall.png");
+    background-repeat: repeat;
+    height: 100%;
+    position: relative;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    width: 850px;
+    font-family: Verdana;
+    font-size: 100%;
+    height: 100%;
+    background: #FBEFFF;
+    color:#0E0129;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+/*body {
+    position: absolute;
+    width: 850px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    font-family: Verdana;
+    font-size: 100%;
+    background: #FBEFFF;
+    color:#0E0129;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+#container {
+    overflow: hidden;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ****top section**** */
+#header {
+    position: relative;
+    height:160px;
+    padding: 15px 25px;
+    background-color: #cdddff;
+    color: #0E0129;
+    /*border-bottom: solid 15px rgba(13, 22, 133, 100);*/
+    /* border-radius: 0 0 8px 8px;*/
+    z-index: 25;
+}
+
+h1 {
+    text-indent: -9999px;
+    float: left;
+}
+
+
+
+img.logo {
+    float: left;
+    height: 120px;
+    width: 370px;
+    margin: 10px;
+}
+
+.wel-text {
+    position: relative;
+    padding: 5px;
+}
+
+#message {
+    position: absolute;
+    bottom: 0px;
+    right: 6px;
+    width: 250px;
+    height: 30px;
+    overflow: visible;
+    text-align: center;
+            
+    background: #b28ffc;
+    border-bottom: solid 2px #7d84e4;
+    /*-moz-border-bottom-image:-moz-linear-gradient(right, #0d1785 0%, #7d84e4 25%, #7d84e4 75%, #0d1785 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #0d1785 0%, #7d84e4 25%, #7d84e4 75%, #0d1785 100%);
+    -o-border-bottom-image: -o-linear-gradient(right, #0d1785 0%, #7d84e4 25%, #7d84e4 75%, #0d1785 100%);
+    border-bottom-image: linear-gradient(to right, #0d1785 0%, #7d84e4 25%, #7d84e4 75%, #0d1785 100%);*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#message:before, #message:after {
+    position: absolute;
+    bottom: 0.5px;
+    width: 10px;
+    height: 10px;
+    content: " ";
+}
+
+#message:before {
+    left: -10px;
+    border-bottom-right-radius: 12px;
+    border-width: 0 1px 1px 0;
+    box-shadow: 4px 3px 0 #b28ffc;
+}
+
+#message:after {
+    right: -10px;
+    border-bottom-left-radius: 12px;
+    box-shadow: -4px 3px 0 #b28ffc;
+}
+
+#usern {
+    cursor: pointer;
+    color: #461F99;
+    font-weight: 500;
+    padding: 2px;
+
+}
+
+
+.arrow {
+    width: 13px; 
+    height: 13px;
+    margin-left: 5px;
+    padding-top: 2px;
+}
+
+#hover:hover{
+    cursor: pointer;
+}
+
+
+#useropt {
+    position: relative;
+    left: 118px;
+    top: 2px;
+    z-index: 9999;
+    visibility: hidden;
+}
+
+
+.opt {
+    text-decoration: none;
+    color: black;
+}
+
+/*#useropt > li{
+    background: #b28ffc;
+    width: 100px;
+    height: 22px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+} */
+
+#useropt > li a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 10px;
+    background-color: #b28ffc;
+    border-radius: 5px;
+}
+
+#useropt > li a:hover{
+    background: #8f5ff5;
+}
+
+#header-border {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 850px;
+    background: rgba(13, 22, 133, 100);
+    z-index: 10;
+}
+
+
+#hover:hover #usern{
+    font-weight: bold !important;
+}
+
+/* navigation */
+#nav-bg{
+    position: fixed;
+    width: 170px;
+    top: 0;
+    bottom: 0;
+    background-color: #8f5ff5;
+    z-index: 0;
+}
+#nav {
+    position: relative;
+    float: left;
+    width: 20%; 
+    padding: 10px;
+    padding-top: 15px;
+    background-color: #8f5ff5;
+    color: #e9ddff;
+    z-index: 10;
+    font-weight: 700;
+}
+
+#nav-list {
+
+}
+
+#nav ul{
+    margin: 0;
+    padding: 0px;
+    width: 100px;
+}
+
+#nav ul li a {
+    display: block;
+    width: 175px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 8px;
+    margin-left: -10px;
+    color: #eae0ff;
+    background-color: #8f5ff5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#nav-list ul li a:hover{
+    background-color: #6236be;
+    border-top: solid #4e1cb8 1px;
+    border-bottom: solid #4e1cb8 1px;
+}
+
+a.current{
+    background: #461F99 !important;
+    border-top: solid #6236be 1px;
+    border-bottom: solid #6236be 1px;
+}
+
+/* ****main content**** */
+#body {
+    float: right;
+    padding: 30px;
+    width: 80%;
+    background: #FBEFFF;
+    height: 100%;
+}
+
+h2 {
+    border-bottom: solid #757CD3 2px;
+    font-size: 175%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input.submit{
+    border: solid rgba(13, 22, 133, 100) 1px;
+    border-radius: 3px;
+    color: black; 
+    background: #BCA0F8;
+    font-family: Verdana;
+    font-size: 90%;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+input.submit:hover{
+    background-color: #8f5ff5;
+}
+
+input.answeropt {
+    border: solid rgba(13, 22, 133, 100) 1px !important;
+    border-radius: 3px !important;
+    color: black!important; 
+    background: #86A3E0 !important;
+    font-family: Verdana !important;
+    font-size: 90% !important;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.answeropt:hover {
+    background-color: #537ED8 !important;
+}
+
+
+
+/******answer******/
+#answerContainer {
+    width: 662px;
+    background-color: #cdddff;
+    padding: 10px;
+    margin: 0px;
+    border: 2px solid #757CD3;
+    position: relative;
+    left: 700px;
+    overflow: auto;
+    border-radius: 5px 0px 0px 5px;
+    height: 99px;
+}
+
+#alignP {
+    width: 520px;
+    float: left;
+    height: 75px;
+    padding: 20px 0;
+}
+
+#answerOpt{
+    float: right;
+    width: 80px;
+}
+
+#answerOpt > input {
+   width: 60px;
+   margin: 5px;
+   margin-left: -5px !important;
+}
+
+/*
+@-webkit-keyframes slideAnswer{
+0%  {left: 700px;}
+50% {left: 350px;}
+100%    {left: 0px;}
+}
+
+@keyframes slideAnswer{
+0%  {left: 700px;}
+50% {left: 350px;}
+100%    {left: 0px;}
+}
+
+#answerContainer {
+    -webkit-animation: slideAnswer 1s linear;
+    animation: slideAnswer 1s linear;
+}
+*/
+
+input {
+    cursor: pointer;
+}
+
+

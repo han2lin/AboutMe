@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<!--
+Name: Hannah Lin
+Course: Web Design 1, Section 2
+-->
+<head>
+    <meta charset ="utf-8">
+    <title>About Me! | Log In</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.16.0/build/cssreset/cssreset-min.css">
+    <script type="text/javascript" src="../Behavior/logout.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../Presentation/template.css">
+    <link rel="stylesheet" type="text/css" href="../Presentation/logout.css" id="logoutCSS"/>
+</head>
+
+<body>
+    <div id="container">
+<!-- Top Header -->
+    <div id="header">
+        <div id="upper-logo">
+        <a href="index.html"><img class="logo" src="../Images/Logo.png" alt="About Me Logo"><h1 id="logo"></a>About Me</h1>
+        </div>
+       <!--<div id="message">
+            <p class="wel-text">Welcome, <span id="hover"><span id="usern">guest1</span>!<img class="arrow" id="arrow" src="../Images/arrow.png" alt="Click for more"></span></p>
+                <ul id="useropt">
+                    <li>
+                <a href="noprofile.html" class="opt" >Profile</a>
+                    </li>
+                  <li>
+                    <a href="../index.html"class="opt" >Logout</a>
+                  </li>
+                <ul>
+    
+       </div>-->
+     </div>
+
+    <div id="header-border">
+    </br>
+    </div>
+
+<!-- Navigation bar -->
+    <div id="whole-nav">
+    <div id="nav-bg">
+    </div>
+    </div>
+<!-- Main body text -->
+    <div id="body">
+        <form method = "get" action ="http://www.mpconnor.com/cgi-bin/login.cgi" name="login_form">
+           <fieldset>
+                <legend>
+                    Log in to your account
+                    
+                </legend>
+                <ul>
+                    <li>
+                        <p id="status">
+                            <br>
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <label for="uname">
+                            Username:&nbsp;
+                        </label>
+                        <input type="text" placeholder="Enter Your Username" id="username" name="username">
+                        <!-- <abbr class="hide">
+                            *hide
+                        </abbr> -->
+                    </li>
+                    <li>
+                        <label for="pword">
+                            Password:&nbsp;
+                        </label>
+                        <input type="password" placeholder="Enter Your Password" id="password" name="password">
+
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <input type="button" value="Login" name="login" id="loginb" class="controls" onclick= "return submitb_element_click_event_handler()">
+                    </li>
+                    <li>
+                        <input type="reset" value="Reset" name="resetb" class="controls" id="resetb">
+                    </li>
+                    
+                </ul>
+            </fieldset>
+            
+        </form>
+        <input type="hidden" name="next_url" value="/var/www/html/508/Structure/welcome.html">
+        <input type="hidden" name="current_url" value="/var/www/html/508/index.html">
+    </div>
+    
+        <!--popup-->
+    <div id="answerChoice" class="answerContent">
+        <p>
+        <span id="log-1">You have logged out successfully.</span>
+        <br>
+        <br>
+        <span id="log-2">Thank you for visiting my website!</span>
+        
+        </p>
+        <button type="button" id="close">Log back in</button>
+    </div>
+    <div id="BG2" class="answerBG"></div>
+    
+    </div>
+</body>
+</html>

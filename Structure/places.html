@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<!--
+Name: Hannah Lin
+Course: Web Design 1, Section 2
+-->
+<head>
+    <meta charset ="utf-8">
+    <title>About Me | Favorite Places</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.16.0/build/cssreset/cssreset-min.css">
+    <script type="text/javascript" src="../Behavior/places.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../Presentation/template.css">
+    <link rel="stylesheet" type="text/css" href="../Presentation/places.css" id="placeCSS"/>
+</head>
+
+<body>
+    <div id="container">
+<!-- Top Header -->
+    <div id="header">
+        <div id="upper-logo">
+        <a href="welcome.html"><img class="logo" src="../Images/Logo.png" alt="About Me Logo"><h1 id="logo"></a>About Me</h1>
+        </div>
+       <div id="message">
+            <p class="wel-text">Welcome, <span id="hover"><span id="usern">guest1</span>!<img class="arrow" id="arrow" src="../Images/arrow.png" alt="Click for more"></span></p>
+                <ul id="useropt">
+                    <!--<li>
+                <a href="noprofile.html" class="opt" >Profile</a>
+                    </li>-->
+                  <li>
+                    <a href="logout.html"class="opt" >Logout</a>
+                  </li>
+                <ul>
+    
+       </div>
+     </div>
+
+    <div id="header-border">
+    </br>
+    </div>
+
+<!-- Navigation bar -->
+    <div id="whole-nav">
+    <div id="nav-bg">
+    </div>
+    
+    <div id="nav">
+        <div id="nav-list">
+            <p>Favorite:
+                <ul>
+                   <div><li><a class="current" href="places.html">Places</a></li></div>
+                    <li><a href="foods.html">Foods</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    </div>
+    
+<!-- Main body text -->
+    <div id="bodyBG">
+    </div>
+    <div id="body">
+    <h2>Favorite Places</h2>
+    <form method="get" action="" name="guess_places">
+    <p>Guess my favorite place.</p>
+        <div id="inputs">
+        <ul>
+            <div id="C1" class="col">
+            <li><label><input type="radio" name="place" value="Canada" idd>
+                <div class="placeCont"><img src="../Images/canada.jpg" alt="Canada" class= "placePic">&nbsp&nbsp Canada</div>
+            </label></li>
+            <li><label><input type="radio" name="place" value="France">
+                <div class="placeCont"><img src="../Images/france.jpg" alt="France" class= "placePic">&nbsp&nbsp France</div>
+            </label></li>
+            <li><label><input type="radio" name="place" value="LV">
+                <div class="placeCont"><img src="../Images/LV.jpg" alt="LV" class= "placePic">&nbsp&nbsp Las Vegas</div>
+            </label></li>
+            <li><label><input type="radio" name="place" value="GCNP">
+                <div class="placeCont"><img src="../Images/GCNP.jpg" alt="GCNP" class= "placePic">&nbsp&nbsp Grand Canyon</div>
+            </label></li>
+            <li><label><input type="radio" name="place" value="CA">
+                <div class="placeCont"><img src="../Images/CA.jpg" alt="CA" class= "placePic">&nbsp&nbsp California</div>
+            </label></li>
+            </div>
+            
+            <div id="C2" class="col">
+            <li><label><input type="radio" name="place" value="Taiwan"><div class="placeCont"><img src="../Images/taiwan.jpg" alt="taiwan" class= "placePic">&nbsp&nbsp Taiwan</div></label></li>
+            <li><label><input type="radio" name="place" value="TS"><div class="placeCont"><img src="../Images/TS.jpg" alt="TS" class= "placePic">&nbsp&nbsp Times Square</div></label></li>
+            <li><label><input type="radio" name="place" value="Venice"><div class="placeCont"><img src="../Images/venice.jpg" alt="venice" class= "placePic">&nbsp&nbsp Venice</div></label></li>
+            <li><label><input type="radio" name="place" value="Mars"><div class="placeCont"><img src="../Images/mars.jpg" alt="mars" class= "placePic">&nbsp&nbsp Mars</div></label></li>
+            </div>
+         </ul>
+         </div>
+    
+    <div id="bottom">
+    <p><input type="button" value="Submit" name="submitb" id="submitb" class="submit"></p>
+    </div>
+    <!--type='submit'-->
+     
+    <br>
+    <br>
+    <!--****answer****-->
+    <div id="answerContainer">
+        <div id="answerDisplay">
+            <div id="alignP">
+            <p>
+                <span id="answer2">does this work?</span>
+                
+            </p>
+            </div>
+            <div id="answerOpt">
+                    <input type="reset" id="resetb" name="reset" value="Reset" class="answeropt">
+                    <input type="button" id="closeAnswer" name="hide" value="Hide" class="answeropt">
+            </div>
+        </div>
+    </div>
+     
+    </div>
+    
+    </form>
+
+    
+<!-- Test popup -->
+    <!--popup-->
+    <div id="answerChoice" class="answerContent">
+        <p>
+        <span id="answer2">does this work?</span>
+        <button type="button" id="close">Close</button>
+        </p>
+    </div>
+    <div id="BG2" class="answerBG"></div>
+    
+    </div>
+        
+</body>
+</html>

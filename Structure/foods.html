@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<!--
+Name: Hannah Lin
+Course: Web Design 1, Section 2
+-->
+<head>
+    <meta charset ="utf-8">
+    <title>About Me | Favorite Foods</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.16.0/build/cssreset/cssreset-min.css">
+    <script type="text/javascript" src="../Behavior/foods.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../Presentation/template.css">
+    <link rel="stylesheet" type="text/css" href="../Presentation/foods.css" id="foodsCSS"/>
+</head>
+
+<body>
+    <div id="container">
+    
+<!-- Top Header -->
+    <div id="header">
+        <div id="upper-logo">
+        <a href="welcome.html"><img class="logo" src="../Images/Logo.png" alt="About Me Logo"><h1 id="logo"></a>About Me</h1>
+        </div>
+       <div id="message">
+            <p class="wel-text">Welcome, <span id="hover"><span id="usern">guest1</span>!<img class="arrow" id="arrow" src="../Images/arrow.png" alt="Click for more"></span></p>
+                <ul id="useropt">
+                    <!--<li>
+                <a href="noprofile.html" class="opt" >Profile</a>
+                    </li>-->
+                  <li>
+                    <a href="logout.html"class="opt" >Logout</a>
+                  </li>
+                <ul>
+    
+       </div>
+     </div>
+
+    <div id="header-border">
+    </br>
+    </div>
+
+<!-- Navigation bar -->
+    <div id="whole-nav">
+    <div id="nav-bg">
+    </div>
+    
+    <div id="nav">
+        <div id="nav-list">
+            <p>Favorite:
+                <ul>
+                   <div><li><a href="places.html">Places</a></li></div>
+                    <li><a class="current" href="foods.html">Foods</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    </div>
+    
+<!-- Main body text -->
+    <div id="body">
+    <h2>Favorite Foods</h2>
+    <form method="get" action="" name="guess_foods">
+    <p>Guess my favorite food items for each meal, and click the corresponding pictures to submit.</p>
+    <div id="inputs">
+    <div id="foodOpts">
+    <ul>
+   
+        <!-- Breakfast ************* -->
+        <div id="breakfast" class="meal">
+        <li>
+            <img src="../Images/breakfast.jpg" value="breakfast" id="breakfastb" class="pic">
+            <div id="label">Breakfast:&nbsp </div>
+            <select name="breakfastfood" class="list" id="bk">
+                <option value="0">Select One</option>
+                <option value="1">Donut</option>
+                <option value="2">Kellogg's Cereal</option>
+                <option value="3">Blueberry Muffin</option>
+                <option value="4">Bread</option>
+                <option value="5">Pancake</option>
+                <option value="6">Croissant</option>
+                <option value="7">Energy Bar</option>
+                <option value="8">Bacon</option>
+            </select>
+        </li>
+        
+        </div>
+        <div id="answer1Container" class="answerContainer">
+        <div id="answerDisplay1" class="answerDisplay">
+            <div id="alignP1" class="alignP">
+            <p>
+                <span id="answerBreakfast">does this work?</span>
+                
+            </p>
+            </div>
+            <!--<div id="answerOpt1" class="answerOpt">
+                    <!--<input type="reset" id="resetb1" name="reset" value="Reset" class="answeropt">
+                    <input type="button" id="closeAnswer1" name="hide" value="Hide" class="answeropt">
+            </div>-->
+        </div>
+        </div>
+        
+        <!-- Lunch ***************** -->
+        <div id="lunch" class="meal">        
+        <li>
+            <img src="../Images/lunch.jpg" value="lunch" id="lunchb" class="pic">
+            Lunch:&nbsp 
+            <select name="lunchfood" class="list" id="l">
+                <option value="9">Select One</option>
+                <option  value="10">Salt and Pepper Squid</option>
+                <option  value="11">Peppermints</option>
+                <option value="12" >Salami</option>
+                <option value="13">White Cut Chicken</option>
+                <option value="14">Barbecue</option>
+                <option value="15">Sashimi</option>
+                <option value="16">Pasta</option>
+                <option value="17">Doritos</option>
+            </select>
+        </li>    
+            
+        </div>
+        
+        <div id="answer2Container" class="answerContainer">
+        <div id="answerDisplay2" class="answerDisplay">
+            <div id="alignP2" class="alignP">
+            <p>
+                <span id="answerLunch">does this work?</span>
+                
+            </p>
+            </div>
+            <!--<div id="answerOpt2" class="answerOpt">
+                    <!--<input type="reset" id="resetb2" name="reset" value="Reset" class="answeropt">
+                    <input type="button" id="closeAnswer2" name="hide" value="Hide" class="answeropt">
+             </div>-->
+        </div>
+        </div>
+        
+        <!-- Dinner ******************* -->    
+        <div id="dinner" class="meal">            
+        <li>
+            <img src="../Images/dinner.jpg" value="dinner" id="dinnerb" class="pic">
+            Dinner:&nbsp 
+            <select name="dinnerfood" class="list" id="d">
+                <option value="18">Select One</option>
+                <option value="19">Dumplings</option>
+                <option value="20">Fish &amp; Chips</option>
+                <option value="21">Asian Shrimp Lettuce Wraps</option>
+                <option value="22">Chinese Pancakes</option>
+                <option value="23">Fruits</option>
+                <option value="24">Beef Noodle Soup</option>
+                <option value="25">Pizza</option>
+                <option value="26">All of the above</option>
+            </select>
+        </li>
+            
+       </div>
+       <div id="answer3Container" class="answerContainer">
+        <div id="answerDisplay3" class="answerDisplay">
+            <div id="alignP3" class="alignP">
+            <p>
+                <span id="answerDinner">does this work?</span>
+                
+            </p>
+            </div>
+            <!--<div id="answerOpt3" class="answerOpt">
+                    <!--<input type="reset" id="resetb3" name="reset" value="Reset" class="answeropt">
+                    <input type="button" id="closeAnswer3" name="hide" value="Hide" class="answeropt">
+            </div>-->
+        </div>
+        </div>
+    </ul>
+    </div>
+    
+    <!--****answer breakfast, lunch, and dinner****-->
+    
+    </div>
+       <!-- answer All -->
+    <div id="answerContainer">
+        <div id="answerDisplay">
+            <div id="alignP">
+            <p>
+                <span id="answerFinal">Great job! You got them all!</span>
+                
+            </p>
+            </div>
+            <div id="answerOpt">
+                    <input type="reset" id="resetbAll" name="reset" value="Reset" class="answeropt">
+                    <!--<input type="button" id="closeAnswerAll" name="hide" value="Hide" class="answeropt">-->
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    </form>
+    
+    
+
+
+ 
+    </div>
+   
+
+    
+    </div>
+</body>
+
+</html>

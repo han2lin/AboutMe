@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<!--
+Name: Hannah Lin
+Course: Web Design 1, Section 2
+-->
+<head>
+    <meta charset ="utf-8">
+    <title>All About Me! | Favorite Activities</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.16.0/build/cssreset/cssreset-min.css">
+    <script type="text/javascript" src="../Behavior/activities.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../Presentation/template.css">
+    <link rel="stylesheet" type="text/css" href="../Presentation/activities.css" id="activitiesCSS"/>
+</head>
+
+<body>
+    <div id="container">
+    
+<!-- Top Header -->
+    <div id="header">
+        <div id="upper-logo">
+        <a href="welcome.html"><img class="logo" src="../Images/Logo.png" alt="About Me Logo"><h1 id="logo"></a>About Me</h1>
+        </div>
+       <div id="message">
+            <p class="wel-text">Welcome, <span id="hover"><span id="usern">guest1</span>!<img class="arrow" id="arrow" src="../Images/arrow.png" alt="Click for more"></span></p>
+                <ul id="useropt">
+                    <!--<li>
+                <a href="noprofile.html" class="opt" >Profile</a>
+                    </li>-->
+                  <li>
+                    <a href="logout.html"class="opt" >Logout</a>
+                  </li>
+                <ul>
+    
+       </div>
+     </div>
+
+    <div id="header-border">
+    </br>
+    </div>
+
+<!-- Navigation bar -->
+    <div id="whole-nav">
+    <div id="nav-bg">
+    </div>
+    
+    <div id="nav">
+        <div id="nav-list">
+            <p>Favorite:
+                <ul>
+                   <div><li><a href="places.html">Places</a></li></div>
+                    <li><a href="foods.html">Foods</a></li>
+                    <li><a class="current" href="activities.html">Activities</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    </div>
+    
+<!-- Main body text -->
+    <div id="body">
+    <h2>Favorite Activities</h2>
+    <form method="get" action="" name="guess_activities">
+    <p>Guess which three activites are my favorite.</p>
+    <ul id="inputs">
+        <li><label><input type="checkbox" name="act" value="1"> Surfing</label></li>
+        <li><label><input type="checkbox" name="act" value="2"> Coding</label></li>
+        <li><label><input type="checkbox" name="act" value="3"> People watching</label></li>
+        <li><label><input type="checkbox" name="act" value="4"> Taxidermy</label></li>
+        <li><label><input type="checkbox" name="act" value="5"> Trumpet</label></li>
+        <li><label><input type="checkbox" name="act" value="6"> Squash</label></li>
+        <li><label><input type="checkbox" name="act" value="7"> Pigeon Racing</label></li>
+        <li><label><input type="checkbox" name="act" value="8"> Piano</label></li>
+        <li><label><input type="checkbox" name="act" value="9"> Foraging</label></li>
+        <li><label><input type="checkbox" name="act" value="10"> Archery</label></li>
+        <li><label><input type="checkbox" name="act" value="11"> Table Tennis</label></li>
+        <li><label><input type="checkbox" name="act" value="12"> Geocaching</label></li>
+        <li><label><input type="checkbox" name="act" value="13"> Videophilia</label></li>
+        <li><label><input type="checkbox" name="act" value="14"> Gardening</label></li>
+        <li><label><input type="checkbox" name="act" value="15"> Skating</label></li>
+       
+    </ul>
+   
+    <p><input type="button" value="Submit" name="submitb" id="submitb" class="submit"></p>
+
+    <br>
+    <br>
+    <!--****answer****-->
+    <div id="answerContainer">
+        <div id="answerDisplay">
+            <div id="alignP">
+            <p>
+                <span id="answer2">does this work?</span>
+                
+            </p>
+            </div>
+            <div id="answerOpt">
+                    <input type="reset" id="resetb" name="reset" value="Reset" class="answeropt">
+                    <input type="button" id="closeAnswer" name="hide" value="Hide" class="answeropt">
+            </div>
+        </div>
+    </div>
+
+    </form>
+
+
+    </div>
+</body>
+
+</html>

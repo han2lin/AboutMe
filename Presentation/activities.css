@@ -1,0 +1,88 @@
+/*
+Name: Hannah Lin
+Course: Web Design 1, Section 2
+*/
+
+
+form {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 10px;
+    
+}
+
+form > p{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#inputs {
+    padding: 10px;
+    margin-top: 0;
+    padding-top: 5;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+
+
+/******answer******/
+#answerContainer {
+    width: 662px;
+    background-color: #cdddff;
+    padding: 10px;
+    margin: 0px;
+    border: 2px solid #757CD3;
+    position: relative;
+    left: 700px;
+    overflow: auto;
+    border-radius: 5px 0px 0px 5px;
+    height: 99px;
+}
+
+#alignP > p{
+    vertical-align: middle;
+}
+
+#alignP {
+    width: 520px;
+    float: left;
+    height: 75px;
+}
+
+#answerOpt{
+    float: right;
+    width: 80px;
+}
+
+#closeAnswer {
+    /*position: relative;
+    top: -35px;
+    left: -18px;
+    margin: 0px;
+    padding: 0px 5px;*/
+    
+}
+
+#answerOpt > input {
+   width: 60px;
+   margin: 5px;
+
+}
+
+
+input[type=checkbox] {  
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right:  15px;
+    position: relative;
+    left: 10px;
+    bottom: 0px;
+}
+
+
+
+form label:hover {
+    cursor: pointer;
+}
